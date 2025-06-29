@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Prototipos
 int registrar_cliente();
 int registrar_produto();
 int registrar_venda();
@@ -15,7 +14,6 @@ void atualizar_produto();
 void listar_vendas();
 void produto_top_vendas();
 
-// Estruturas
 typedef struct {
     int codigo;
     char nome[50];
@@ -40,12 +38,12 @@ typedef struct {
     int forma_pagamento;
 } Venda;
 
-// Arrays globais
+
 Cliente clientes[10];
 Produto produtos[10];
 Venda vendas[50];
 
-// Contadores e IDs
+
 int total_clientes = 0;
 int total_produtos = 0;
 int total_vendas = 0;
